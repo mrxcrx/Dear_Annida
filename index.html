@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Dear Annida</title>
+	<script>
+		let ulang = true;
+
+		do {
+			let x = prompt("Masukin nama kamu!")
+			alert("Halo, " + x + "!!, Apakah kamu bersedia untuk menjawab pertanyaan berikut? klik oke")
+
+			let c = prompt("Siapa cowo yang " + x + " sayang?")
+			prompt("Berapa lama " + x + " suka sama " + c)
+
+			let v = prompt("Mau ga jadi pacarnya " + c + " (Y/N)")
+
+			if (v == "Y" || v == "y") {
+				alert("Terimakasih " + x + ", aku ada sesuatu yang spesial untukmu, tekan oke")
+				ulang = false;
+			} else if (v == "N" || v == "n") {
+				alert("Kok gitu sih?")
+				alert("yaudah deh, kita coba sekali lagi!!")
+				ulang = true;
+			} else {
+				alert("Karakter yang " + x + " salah nih! ulang lagi ya..")
+				ulang = true;
+			}
+		} while (ulang);
+	</script>
+</head>
+
+<body>
+	<div class="box">
+		<img src="foto\pp.jpeg" alt="" class="box-img">
+		<h1>ANNIDA NUR FADHILLAH <div class="hati">&#10084</div>
+		</h1>
+		<h5>Jika rindu adalah jawabannya lantas apa pertanyaannya?</h5>
+
+		<audio controls autoplay>
+			<source src="mood.mp3" type="audio/mpeg">
+		</audio>
+
+		<ul>
+			<h5>Tekan logo Whatsapp dibawah untuk ungkapin perasaanmu!</h5>
+			<li><a href="https://api.whatsapp.com/send?phone=6289633523232&text=Aku%0ASayang%20Rama"><i
+						class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+		</ul>
+	</div>
+</body>
+
+</html>
